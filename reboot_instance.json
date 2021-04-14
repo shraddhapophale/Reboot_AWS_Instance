@@ -1,0 +1,27 @@
+{
+  "name": "Reboot_AWS_Instance",
+  "version": "1.0",
+  "author": "SP",
+  "url": "https://github.com/",
+  "license": "AGPL-V3",
+  "description": "Reboot the AWS Instance",
+  "dataTypeList": ["thehive:case", "thehive:case_artifact"],
+  "command": "Reboot_AWS_Instance/reboot_instance.py",
+  "baseConfig": "Reboot_AWS_Instance",
+  "configurationItems": [
+    {
+      "name": "access_key",
+      "description": "Access Key of IAM user",
+      "type": "string",
+      "multi": false,
+      "required": true
+    },
+    {
+      "name": "secret_access_key",
+      "description": "Secret Access Key of IAM user",
+      "type": "string",
+      "multi": false,
+      "required": true
+    }
+  ]
+}
